@@ -2,11 +2,21 @@
 
 [![Three.js](https://img.shields.io/badge/Three.js-r160-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
 [![WebGL](https://img.shields.io/badge/WebGL-2.0-red?style=for-the-badge&logo=webgl)](https://www.khronos.org/webgl/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![AI Generated](https://img.shields.io/badge/Generated%20by-AI%20%2F%20Claude%20Artifacts-9cf?style=for-the-badge&logo=openai)](https://github.com/otka256/modern-house-3d)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Demo-Live%20Preview-blue?style=for-the-badge&logo=github)](https://otka256.github.io/modern-house-3d/)
 
-An immersive, interactive **3D Architectural Walkthrough Experience** built with **Three.js** and WebGL. Explore a modern interior villa in first-person with dynamic lighting, interactive elements, custom shaders, and a futuristic HUD interface.
+> 🤖 **Note on Creation**: This entire 3D architectural exploration and interactive WebGL scene was **100% generated with AI** (Claude 3.5 Sonnet / AI Coding Artifacts) in a single standalone HTML file (~2,500 lines of procedural Three.js, shaders, dynamic physics, and HUD logic).
+
+An immersive, interactive **3D Architectural Walkthrough Experience** built with **Three.js** and WebGL. Explore a modern interior villa in first-person with dynamic lighting, interactive elements, custom procedural geometries, and a futuristic HUD interface.
+
+---
+
+## 🤖 AI Generation Showcase
+This project serves as a practical demonstration of state-of-the-art **AI code generation capabilities** in complex 3D graphics:
+- 🏗️ **Zero External 3D Models (.gltf/.obj)**: All structural components, furniture, lights, and architectural details are procedurally synthesized in code by the AI.
+- 📐 **Complex Mathematics & Shaders**: Procedural texture generation, canvas textures, and custom lighting calculations generated end-to-end.
+- 🎮 **Full Game Loop**: Integrated input controller, collision detection, pointer-lock camera, and responsive mobile virtual joysticks in ~2.5k lines of pure code.
 
 ---
 
@@ -57,6 +67,7 @@ Open [http://localhost:8000](http://localhost:8000) in your browser.
 ---
 
 ## 🛠️ Tech Stack
+- **AI Engine**: Claude 3.5 Sonnet / LLM Procedural Generation
 - **Rendering Engine**: [Three.js](https://threejs.org/) (r160)
 - **Styling**: Vanilla CSS3 (Glassmorphism & Backdrop Filters)
 - **Deployment**: GitHub Pages (Automatic zero-config static hosting)
@@ -67,4 +78,4 @@ Open [http://localhost:8000](http://localhost:8000) in your browser.
 This project is open-source and available under the [MIT License](LICENSE).
 
 ---
-*Created by [otka256](https://github.com/otka256)* ⚡
+*Curated & Published by [otka256](https://github.com/otka256)* ⚡
