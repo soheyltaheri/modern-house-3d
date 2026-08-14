@@ -12,22 +12,61 @@ An immersive, interactive **3D Architectural Walkthrough Experience** built with
 
 ---
 
-## 🤖 AI Generation Showcase
-This project serves as a practical demonstration of state-of-the-art **AI code generation capabilities** in complex 3D graphics:
-- 🏗️ **Zero External 3D Models (.gltf/.obj)**: All structural components, furniture, lights, and architectural details are procedurally synthesized in code by the AI.
-- 📐 **Complex Mathematics & Shaders**: Procedural texture generation, canvas textures, and custom lighting calculations generated end-to-end.
-- 🎮 **Full Game Loop**: Integrated input controller, collision detection, pointer-lock camera, and responsive mobile virtual joysticks in ~2.5k lines of pure code.
+## ⚡ Live Demo
+Experience the 3D walkthrough directly in your browser:
+👉 **[https://otka256.github.io/modern-house-3d/](https://otka256.github.io/modern-house-3d/)**
 
 ---
 
-## ✨ Features
+## 📜 The Exact AI Generation Prompt
+Below is the original system prompt that synthesized this entire interactive 3D game into a zero-dependency standalone `index.html`:
 
-- 🎮 **First-Person Walkthrough**: Smooth WASD movement, pointer-lock mouse look, and physics/collision handling.
-- 💡 **Dynamic Lighting & Shadows**: Realistic ambient occlusion, soft directional shadows, and warm interior point lights.
-- 🛋️ **Interactive Objects**: Inspect and toggle house appliances, lights, doors, and interactive triggers in real time.
-- 🧭 **Heads-Up Display (HUD)**: Sleek glassmorphism room badges, dynamic reticle crosshair, mini-map / spatial location tags, and integrated control hints.
-- 📱 **Mobile & Desktop Responsive**: Supports touch joysticks for mobile browsers as well as keyboard + mouse controls.
-- ⚡ **Zero-Build Architecture**: Powered by native ES Modules and modern CDN imports (no bundler required).
+```text
+Create a fully playable, realistic first-person 3D house exploration game that runs directly in the browser.
+
+Use only:
+- HTML
+- CSS
+- vanilla JavaScript
+- Three.js r160 or later, loaded via ES module <script type="module"> with an importmap pointing to jsdelivr or unpkg (e.g. https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js)
+- PointerLockControls from three/addons/controls/PointerLockControls.js, imported through the same importmap
+
+Do not use:
+- npm, Vite, React, TypeScript, build tools
+- external models, textures, images, audio files, fonts, or any asset that requires downloading (no Google Fonts, no @import, no external CSS)
+- backend services
+- placeholder comments or incomplete systems
+
+Return only one complete index.html file containing all HTML, CSS, and JavaScript. The game must be immediately playable by opening the file in a modern browser. Do not explain anything. Do not provide setup instructions or partial code. Do not truncate or abbreviate any section — if the file is long, still return it in full, uncut.
+
+Core requirements:
+1. First-person perspective:
+   - True first-person camera with mouse look via PointerLockControls
+   - Smooth WASD movement + Sprint (Shift) + Jump (Space)
+   - Eye height ~1.7m, base walking speed ~1.4 m/s, sprint ~2.8 m/s, with acceleration/friction and gravity ~9.8 m/s²
+   - AABB collision detection against walls, floors, furniture, and door frames
+   - Subtle realistic head bobbing while walking
+
+2. The House:
+   - Coherent multi-room layout (~100-150 m²): Living Room, Kitchen, Bedroom, Bathroom, Hallway
+   - Interactive doors that open/close on proximity or pressing 'E'
+   - Semi-transparent glass windows with incoming daylight
+   - Procedural furniture: sofa, table, chairs, bed, kitchen counters, fridge, toilet, sink, shelves, lamps
+   - Procedural materials (solid colors, PBR MeshStandardMaterial representing wood, fabric, metal, glass)
+
+3. Realism and Polish:
+   - Grounded gravity and smooth collision response
+   - Realistic interior daytime lighting with soft shadows
+   - Minimal HUD: crosshair, dynamic 'Press E' interaction prompts, room indicator badges
+   - Pause menu (Escape) and restart option
+```
+
+---
+
+## 🤖 AI Generation Breakdown & Architecture
+- 🏗️ **Zero External 3D Models (.gltf/.obj)**: All structural components, furniture, lights, and architectural details are procedurally synthesized in code by the AI.
+- 📐 **Complex Mathematics & Shaders**: Procedural canvas textures and custom PBR lighting calculations generated end-to-end.
+- 🎮 **Full Game Loop**: Integrated input controller, collision detection, pointer-lock camera, and responsive mobile virtual joysticks in ~2.5k lines of pure code.
 
 ---
 
@@ -43,34 +82,17 @@ This project serves as a practical demonstration of state-of-the-art **AI code g
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (Local Run)
 
-### 1. Clone the repository
 ```bash
+# Clone
 git clone https://github.com/otka256/modern-house-3d.git
 cd modern-house-3d
-```
 
-### 2. Run locally
-Since the project uses ES modules, serve it using any local HTTP server:
-
-```bash
-# Using Python
+# Run locally using Python or any static server
 python -m http.server 8000
-
-# Using Node.js (npx)
-npx serve .
 ```
-
 Open [http://localhost:8000](http://localhost:8000) in your browser.
-
----
-
-## 🛠️ Tech Stack
-- **AI Engine**: Claude 3.5 Sonnet / LLM Procedural Generation
-- **Rendering Engine**: [Three.js](https://threejs.org/) (r160)
-- **Styling**: Vanilla CSS3 (Glassmorphism & Backdrop Filters)
-- **Deployment**: GitHub Pages (Automatic zero-config static hosting)
 
 ---
 
