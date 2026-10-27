@@ -2,9 +2,9 @@
 
 [![Three.js](https://img.shields.io/badge/Three.js-r160-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
 [![WebGL](https://img.shields.io/badge/WebGL-2.0-red?style=for-the-badge&logo=webgl)](https://www.khronos.org/webgl/)
-[![AI Generated](https://img.shields.io/badge/Generated%20by-AI%20%2F%20Claude%20Artifacts-9cf?style=for-the-badge&logo=openai)](https://github.com/otka256/modern-house-3d)
+[![AI Generated](https://img.shields.io/badge/Generated%20by-AI%20%2F%20Claude%20Artifacts-9cf?style=for-the-badge&logo=openai)](https://github.com/soheyltaheri/modern-house-3d)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/Demo-Live%20Preview-blue?style=for-the-badge&logo=github)](https://otka256.github.io/modern-house-3d/)
+[![GitHub Pages](https://img.shields.io/badge/Demo-Live%20Preview-blue?style=for-the-badge&logo=github)](https://soheyltaheri.github.io/modern-house-3d/)
 
 > 🤖 **Note on Creation**: This entire 3D architectural exploration and interactive WebGL scene was **100% generated with AI** (Claude 3.5 Sonnet / AI Coding Artifacts) in a single standalone HTML file (~2,500 lines of procedural Three.js, shaders, dynamic physics, and HUD logic).
 
@@ -14,7 +14,7 @@ An immersive, interactive **3D Architectural Walkthrough Experience** built with
 
 ## ⚡ Live Demo
 Experience the 3D walkthrough directly in your browser:
-👉 **[https://otka256.github.io/modern-house-3d/](https://otka256.github.io/modern-house-3d/)**
+👉 **[https://soheyltaheri.github.io/modern-house-3d/](https://soheyltaheri.github.io/modern-house-3d/)**
 
 ---
 
@@ -86,7 +86,7 @@ Core requirements:
 
 ```bash
 # Clone
-git clone https://github.com/otka256/modern-house-3d.git
+git clone https://github.com/soheyltaheri/modern-house-3d.git
 cd modern-house-3d
 
 # Run locally using Python or any static server
@@ -100,4 +100,4 @@ Open [http://localhost:8000](http://localhost:8000) in your browser.
 This project is open-source and available under the [MIT License](LICENSE).
 
 ---
-*Curated & Published by [otka256](https://github.com/otka256)* ⚡
+*Curated & Published by [soheyltaheri](https://github.com/soheyltaheri)* ⚡
